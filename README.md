@@ -6,6 +6,16 @@ Fuzzy search for ownCloud using PostgreSQL
 
 SearchLight requires ownCloud to be setup with PostgreSQL as database backend and requires PostgreSQL to be compiled with the `pg_trgm` extension.
 
+## Installation
+
+Due to permission limitations SearchLight can't enable the `pg_trgm` extension automatically, to enable this extension run
+
+```
+CREATE EXTENSION pg_trgm
+```
+
+On the PostgreSQL server a super user before enabling the app.
+
 ## Fuzzy search
 
 SearchLight uses PostgresSQL's fuzzy search features to provide fast fuzzy matching of file names.
