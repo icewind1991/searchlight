@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<info>
+	<id>searchlight</id>
+	<name>SearchLight</name>
+	<licence>AGPL</licence>
+	<author>Robin Appelman</author>
+	<description>Fuzzy search for ownCloud using PostgreSQL</description>
+	<version>0.1.0</version>
+	<namespace>SearchLight</namespace>
+	<dependencies>
+		<owncloud min-version="9.1" max-version="9.2"/>
+	</dependencies>
+</info>
