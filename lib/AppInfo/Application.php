@@ -39,14 +39,14 @@ class Application extends App {
 	public function setUpIndex() {
 		$server = $this->getContainer()->getServer();
 		$config = $server->getConfig();
-		if ($config->getAppValue('searchlighht', 'index_version', 0) < 1) {
-			$config->setAppValue('searchlighht', 'index_version', 1);
+		if ($config->getAppValue('searchlight', 'index_version', 0) < 1) {
+			$config->setAppValue('searchlight', 'index_version', 1);
 			$connection = $server->getDatabaseConnection();
 			try {
 				$connection->executeQuery('CREATE EXTENSION pg_trgm');
 				$connection->executeQuery('CREATE INDEX *PREFIX*path_tri_idx ON *PREFIX*filecache USING gin(name gin_trgm_ops)');
 			} catch (DriverException $e) {
-				
+				$server->getLogger()->logException($e);
 			}
 		}
 	}
