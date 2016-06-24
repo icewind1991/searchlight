@@ -56,7 +56,7 @@ class Application extends App {
 			$container = $this->getContainer();
 			$server = $container->getServer();
 			$server->getSearch()->removeProvider('OC\Search\Provider\File'); // we replace the build in search
-			$server->getSearch()->registerProvider('\OCA\SearchLight\Search\SearchProvider', [
+			$server->getSearch()->registerProvider('\OCA\SearchLight\Search\File', [
 				'apps' => ['files'],
 				'connection' => $server->getDatabaseConnection(),
 				'userSession' => $server->getUserSession(),

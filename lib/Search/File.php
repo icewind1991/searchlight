@@ -32,7 +32,7 @@ use OCP\IDBConnection;
 use OCP\IUserSession;
 use OCP\Search\Provider;
 
-class SearchProvider extends Provider {
+class File extends Provider {
 
 	/** @var  IDBConnection */
 	private $connection;
