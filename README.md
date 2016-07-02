@@ -1,10 +1,10 @@
 # SearchLight
 
-Fuzzy search for ownCloud using PostgreSQL
+Fuzzy search for Nextcloud/ownCloud using PostgreSQL
 
 ## Requirements
 
-SearchLight requires ownCloud to be setup with PostgreSQL as database backend and requires PostgreSQL to be compiled with the `pg_trgm` extension.
+SearchLight requires Nextcloud/ownCloud to be setup with PostgreSQL as database backend and requires PostgreSQL to be compiled with the `pg_trgm` extension.
 
 ## Installation
 
