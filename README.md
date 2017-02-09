@@ -14,7 +14,7 @@ Due to permission limitations SearchLight can't enable the `pg_trgm` extension a
 CREATE EXTENSION pg_trgm
 ```
 
-On the PostgreSQL server a super user before enabling the app.
+On the PostgreSQL server as a super user before enabling the app.
 
 ## Fuzzy search
 
